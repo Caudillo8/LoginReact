@@ -4,32 +4,45 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    
+      <div className="App">
+        <MiLogin/>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      )
 }
 
 export default App
+const MiLogin=()=>{/*Siempre Pascal Case!!!*/ 
+  return(
+    <div>
+      <h1>Crea tu cuenta</h1>
+      <h4>Ingresa tu información en el registro.</h4>
+      <form>
+        <label>Nombre</label>
+        <input type="text" placeholder="nombre"/>
+    
+        <label>Apellido</label>
+        <input type="text" placeholder="apellido"/><br /><br />
+
+        <label>Email</label><br />
+        <input type="email" placeholder="correo electrónico"/><br /><br />
+
+        <label>Teléfono</label><br />
+        <input type="tel" placeholder="correo electrónico"/><br /><br />
+
+        <label>Password</label><br />
+        <input type="password" placeholder="contraseña"/><br /><br />
+
+        <label>Confirma pass</label><br />
+        <input type="password" placeholder="confirma contraseña"/><br /><br />
+
+        <input type="submit" value="Registrarse" />
+
+      </form>
+    </div>
+  )};
+
