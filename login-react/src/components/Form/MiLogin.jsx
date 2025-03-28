@@ -29,7 +29,7 @@ export const MiLogin = () => {
         <div className="datoLargo">
           <label>Teléfono</label>
           <br />
-          <input type="tel" placeholder="correo electrónico" />
+          <input type="tel" placeholder="número de teléfono" />
           <br />
           <br />
         </div>
